@@ -176,7 +176,7 @@
 					<div class="landingScreenChild">
 						<div>
 							<p>Hello, there!</p>
-							<p>We Are <span class="primary1">OnCampus</span></p>
+							<p>We Are <span id="text1"></span></p>
 						</div>
 						<div>
 							<p>
@@ -197,18 +197,15 @@
 		<section id="ProjectsSection"></section>
 		<script src="./scripts/jquery.js"></script>
 		<script src="./scripts/main.js"></script>
-		<script src="https://cdn.jsdeliver.net/npm/typed.js@2.0.12"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 		<script>
-			var autoTyper=new Typed(".primary1",{
-				strings:["On-Board","On-Campus"],
-				typeSpeed:100,
-				backSpeed:100,
-
-
-				loop:true
-
-			})
-		</script>
+			var typed = new Typed('#text1	', {
+				strings: ["<span style='color:#13ca91'>OnBoard,</span>", "<span style='color:#fe53bb'>OnCampus!</span>"],
+				typeSpeed: 80,
+				cursorChar:'',
+				loop: false
+			});
+			</script>
 	</body>
 
 </html>
